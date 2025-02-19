@@ -5,7 +5,7 @@
   <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
   <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
   <meta name="MSSmartTagsPreventParsing" content="TRUE">
-  <title>Jagex Software</title>
+  <title>2004Scape WorldMap</title>
   <STYLE>
     BODY,
     TD,
@@ -114,7 +114,6 @@
       text-decoration: underline
     }
   </STYLE>
-  <script defer="defer" src="/js/runetek.js"></script>
   <script defer="defer" src="/js/mapview.js"></script>
 </head>
 
@@ -123,20 +122,14 @@
     <tr>
       <td valign=middle>
         <center>
-          <center>
-            <table width=250 bgcolor=black cellpadding=4>
-              <tr>
-                <td class=e>
-                  <center>
-                    <b>Map of the RuneScape World</b><br>
-                    <a href="/" class=c>Main Menu</a>
-                  </center>
-                </td>
-              </tr>
-            </table>
-          </center>
           <p>
+            <br>
             <canvas id="canvas" width="635" height="503"></canvas>
+            <script>
+                window.onload = async () => {
+                    new MapView().run();
+                }
+            </script>
           <p>
             <center>
               <table width=500 bgcolor=black cellpadding=4 border=0>
@@ -159,11 +152,6 @@
                 </tr>
               </table><br>
             </center>
-          <div align="center" style="font-family:Arial,Helvetica,sans-serif; font-size:11px;">
-            This webpage and its contents is copyright 2004 Jagex Ltd<br>
-            To use our service you must agree to our <a href="terms/terms.html" class=c>Terms+Conditions</a> + <a
-              href="privacy/privacy.html" class=c>Privacy policy</a>
-          </div>
         </center>
       </td>
     </tr>

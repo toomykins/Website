@@ -1,9 +1,6 @@
 // todo: move to db table
 export const profiles = [
-    { id: 'beta', name: 'Beta' },
-    { id: 'alpha1', name: 'Alpha 1.0' },
-    { id: 'alpha2', name: 'Alpha 2.0' },
-    { id: 'alpha3', name: 'Alpha 3.0' },
+    { id: 'main', name: 'main' },
 ];
 
 export function resolveSelectedProfile(req: any): { id: string } {
